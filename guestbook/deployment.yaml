@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 1                      # Self-heal demo-ku idha use pannuvom
+  replicas: 5                      # Self-heal demo-ku idha use pannuvom
   selector:
     matchLabels:
       app: guestbook-ui
