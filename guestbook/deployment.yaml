@@ -16,4 +16,4 @@ spec:
       - name: guestbook
         image: httpd:latest
         ports:
-        - containerPort: 80
+        - containerPort: 89
