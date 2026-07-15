@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 3                     # Self-heal demo-ku idha use pannuvom
+  replicas: 5                     # Self-heal demo-ku idha use pannuvom
   selector:
     matchLabels:
       app: guestbook-ui
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: nginx:latest
+        image: httpd:latest
         ports:
         - containerPort: 80
